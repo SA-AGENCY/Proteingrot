@@ -50,7 +50,7 @@ nav {
 
 .shadow {width: 100%; position: absolute; height: 94px; background: url(images/shadow.png); top: 0; left: 0; z-index: 1;}
 
-nav .logo {width: 189px; height: 27px; float: left; background: url(images/logo-300x43.png) center center no-repeat; background-size: cover !important; margin-top: 23.5px; position: fixed; z-index: 100; margin-left: 50px;} 
+nav .logo {width: 189px; height: 27px; float: left; background: url(images/logo-300x43.png) center center no-repeat; background-size: cover !important; margin-top: 23.5px; position: fixed; z-index: 100; margin-left: 50px; -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg);} 
 
 nav ul {list-style: none; display: inline-block; width: auto; height: auto; padding: 0px; margin: 0 auto; position: relative; z-index: 100;}
 nav ul li {list-style: none; margin-right: 2.5em; display: inline-block;}
