@@ -72,7 +72,7 @@ nav .buyContainer .cart .amount {padding: 0em; border: 0em;}
 .scrolled .buyContainer span {border: 2px solid #000; color: #000;}
 .scrolled .buyContainer a {color: #000;}
 
-.scrolled .logo {background: url(images/logo_black.png) center center no-repeat; margin-top: 18.5px;}
+.scrolled .logo {background: url(images/logo_green.png) center center no-repeat; margin-top: 18.5px;}
 
 .static {border-bottom: 1px solid #f4f4f4; background: #fff;}
 .static a {color: #000;}
@@ -89,6 +89,7 @@ h5 {font-size: 1.4em;}
 
 .massive {font-size: 4em; font-weight: 900; font-family: "paralucent"; text-transform: uppercase;}
 .medium {font-size: 2.5em; font-weight: 900; text-transform: uppercase;}
+.smaller {font-size: 2em; font-weight: 900; text-transform: uppercase;}
 
 .textCenter {text-align: center;}
 .textBlock {width: 100%; height: auto; display: block;}
@@ -104,12 +105,21 @@ h5 {font-size: 1.4em;}
 
 /* Background */
 .bgWood {background: url(images/bg/woodbg.jpg);}
-.bgIphone{background-color: #fff;}
+
+.lifesum {padding: 60px 0px; background: #FAFAF5;}
+.lifesumbg {top: 0; right: 0; max-width: 250px; position: absolute;}
+.lifesumbgPepper {bottom: 0; left: 0; max-width: 250px; position: absolute;}
+.lifesumLogo {max-width: 170px; margin-bottom: 1em;}
+.lifesumIphone {max-height: 300px; width: auto !important;}
+
+.fa-heart {margin: 0 0.2em; color: #E65453;}
 
 
 /* Elements */
 .grotpase {width: 50%;}
 .kanel {position: absolute; width: 100px; margin-top: 50px; margin-left: -10px;}
+
+.floatLeft {float: left !important;}
 
 /* Footer */
 .footer-sub {background: #fff; padding: 50px 0px; text-align: center; display: table;}

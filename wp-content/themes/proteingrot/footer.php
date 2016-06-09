@@ -1,15 +1,20 @@
-<section class="bgIphone">
+<section class="lifesum" style="position: relative;">
  <div class="wrapper">
-
-  <div class="width50 cell">
-<img class="grotpase os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0s" src="<?php echo get_template_directory_uri(); ?>/images/iphone.png">
-   
-   
+ <img src="<?php echo get_template_directory_uri(); ?>/images/bg/lifesumbg.png" class="lifesumbg">
+ <img src="<?php echo get_template_directory_uri(); ?>/images/bg/lifesumbgpepper.png" class="lifesumbgPepper">
+ 
+  <div class="width50 cell textCenter">
+   <img class="grotpase os-animation lifesumIphone" data-os-animation="bounceInLeft" data-os-animation-delay="0s" src="<?php echo get_template_directory_uri(); ?>/images/iphone.png">
   </div>
   
-  <div class="width50 cell textCenter">
-  <span class="medium colorBlack textBlock os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">Grym frukost enligt Lifesum! </span><br>
-   <span class="small colorBlack textBlock os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s"> Använder du Lifesum för att hålla koll på kosten kommer vår gröt att hjälpa dig på vägen. Gröten är A ratad med toppbetyg!</span>
+  <div class="width50 cell">
+  
+  <img src="<?php echo get_template_directory_uri(); ?>/images/logos/lifesum.png" class="lifesumLogo os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">
+  
+  <span class="small colorBlack textBlock os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">  Proteingröten är inte bara smakligt god, utan även nyttig. Använder du Lifesum för att hålla koll på kosten kommer vår gröt att hjälpa dig på vägen. Gröten har betyget A på Lifesum!
+  </span><br>
+  
+  <a href="http://lifesum.com" target="_new"><button class="btn btnGreen floatLeft os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">Besök Lifesum</button></a>
  
  </div>
 </section>
@@ -17,9 +22,9 @@
 <section class="footer-sub">
  <div class="wrapper">
   <div class="holder"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/nordicwellness.png"></div>
-  <div class="holder"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/BodyBoxLogo4.png"></div>
+  <div class="holder"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/bodybox.png"></div>
   <div class="holder"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/nordicwellness.png"></div>
-  <div class="holder"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/BodyBoxLogo4.png"></div>
+  <div class="holder"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/bodybox.png"></div>
   <div class="holder"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/nordicwellness.png"></div>
  </div>
 </section>
