@@ -1,9 +1,9 @@
 <section class="footer-sub">
  <div class="wrapper">
   <div class="holder"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/nordicwellness.png"></div>
+  <div class="holder"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/BodyBoxLogo4.png"></div>
   <div class="holder"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/nordicwellness.png"></div>
-  <div class="holder"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/nordicwellness.png"></div>
-  <div class="holder"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/nordicwellness.png"></div>
+  <div class="holder"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/BodyBoxLogo4.png"></div>
   <div class="holder"><img src="<?php echo get_template_directory_uri(); ?>/images/logos/nordicwellness.png"></div>
  </div>
 </section>
