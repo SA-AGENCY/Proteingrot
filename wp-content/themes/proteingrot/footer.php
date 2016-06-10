@@ -11,7 +11,7 @@
   
   <img src="<?php echo get_template_directory_uri(); ?>/images/logos/lifesum.png" class="lifesumLogo os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">
   
-  <span class="small colorBlack textBlock os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">  Proteingröten är inte bara smakligt god, utan även nyttig. Använder du Lifesum för att hålla koll på kosten kommer vår gröt att hjälpa dig på vägen. Gröten har betyget A på Lifesum!
+  <span class="small colorBlack textBlock os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">  Proteingröten är inte bara smakligt god, utan även nyttig. Använder du Lifesum för att hålla koll på kosten kommer vår gröt att hjälpa dig på vägen. Gröten är A klassad på Lifesum!
   </span><br>
   
   <a href="http://lifesum.com" target="_new"><button class="btn btnGreen floatLeft os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">Besök Lifesum</button></a>
