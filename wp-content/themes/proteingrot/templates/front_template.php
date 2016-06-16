@@ -48,4 +48,11 @@ if( !empty($image) ): ?>
  
  </div>
 </section>
+
+<section class="product-front">
+<center>
+<?php echo do_shortcode('[products ids="33"]'); ?>
+</center>
+</section>
 <?php get_footer(); ?>
+
