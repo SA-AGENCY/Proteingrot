@@ -27,9 +27,9 @@
    <?php } else { ?>
  	 <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Logga in','woothemes'); ?>"><span class="signin"><?php _e('Logga in','woothemes'); ?></span></a>
  <?php } ?>
-   <span class="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
+   <a href="/klarna-checkout/"><span class="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
    <?php echo sprintf (_n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
-   </span>
+   </span></a>
   </div>
   
  </div>
