@@ -50,6 +50,9 @@ if( !empty($image) ): ?>
 </section>
 
 <section class="product-front">
+<span class="massive colorBlack">Köp!</span>
+<hr>
+<br>
 <div class="product-center">
 <?php echo do_shortcode('[products ids="33"]'); ?>
 </div>

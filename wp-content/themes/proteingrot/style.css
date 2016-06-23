@@ -96,6 +96,7 @@ h5 {font-size: 1.4em;}
 .textBlock {width: 100%; height: auto; display: block;}
 
 .colorWhite {color: #fff;}
+.colorBlack {color: #000;}
 .colorGreen {color: #94C123;}
 .colorGreenLight {color: #99e336;}
 
@@ -148,8 +149,14 @@ h5 {font-size: 1.4em;}
 
 /* product frontpage testar lite*/
 
+.product-front {
+text-align: center;
+}
+
 .product-center {
 text-align: center;
+height: 50%;
+widht: 50%;
 }
 
 .onsale{
