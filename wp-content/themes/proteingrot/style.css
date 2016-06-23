@@ -12,6 +12,7 @@ Version: 1.0
 @import url('resources/css/wodry.css');
 html, body, * {margin: 0px; padding: 0px; box-sizing: border-box; outline: none;}
 
+
 body {
 	font-family: "sofia-pro";
 	font-size: 16px;
@@ -141,3 +142,29 @@ h5 {font-size: 1.4em;}
 
 .lostPassword {font-size: 0.8em; width: auto; height: auto; text-align: left;}
 .lostPassword a {text-decoration: none; color: #94C123;}
+
+
+
+
+/* product frontpage testar lite*/
+
+.product-center {
+text-align: center;
+}
+
+.onsale{
+display: none !important;
+}
+
+.price {
+color: black !important;
+font-size: 1.8em !important;
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+background-color: #94C123 !important; border-color: #94C123 !important; color: #fff !important; font-size: 1.2em !important;
+}
+
+.woocommerce #respond:hover input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
+background: none !important; color: #94C123 !important; cursor: pointer !important;
+}
