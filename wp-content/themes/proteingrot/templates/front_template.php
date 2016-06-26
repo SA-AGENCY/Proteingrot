@@ -16,7 +16,7 @@ if( !empty($image) ): ?>
   <span class="massive colorWhite"><?php the_field('front_heading'); ?></span>
   <h4 class="colorWhite textBlock"><?php the_field('front_heading_subtitle'); ?></h4>
   
-  <a href="<?php echo get_home_url(); ?>/shop"><button class="button frontButton">Köp proteingröt</button></a>
+  <a href="#Köp"><button class="button frontButton">Köp proteingröt</button></a>
  </div>
  
  <div class="scrollDown animated bounce infinite"></div>
@@ -50,7 +50,7 @@ if( !empty($image) ): ?>
 </section>
 
 <section class="product-front">
-<span class="massive colorBlack">Köp!</span>
+<a id="Köp"><span class="massive colorBlack">Köp!</span></a>
 <hr>
 <br>
 <div class="product-center">
