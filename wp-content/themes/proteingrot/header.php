@@ -35,3 +35,7 @@
   
  </div>
 </nav>
+
+<?php if( !is_front_page() ) : ?>
+ <div class="static-spacer"></div>
+<?php endif; ?>

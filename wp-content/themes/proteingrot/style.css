@@ -80,6 +80,7 @@ nav .buyContainer .cart .amount {padding: 0em; border: 0em;}
 .static .logo {background: url(images/logo_black.png) center center no-repeat;}
 .static .buyContainer span {border: 2px solid #000; border-radius: 2em; padding: 0.5em 2em; padding-bottom: 0.6em; color: #000;}
 
+.static-spacer {height: 80px; width: 100%; float: left;}
 /* Typography */
 h1, h2, h3, h4, h5 {font-family: "sofia-pro"; display: inline-block;}
 h1 {font-size: 3em; font-weight: 900; font-family: "paralucent"; text-transform: uppercase;}
