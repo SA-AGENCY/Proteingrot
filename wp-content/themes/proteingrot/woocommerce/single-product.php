@@ -1,3 +1,3 @@
 <script>
-  window.location = "http://localhost:9000";
+  history.go(-1);
 </script>
