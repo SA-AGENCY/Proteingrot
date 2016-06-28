@@ -83,7 +83,7 @@ nav .buyContainer .cart .amount {padding: 0em; border: 0em;}
 .static .buyContainer span {border: 2px solid #000; border-radius: 2em; padding: 0.5em 2em; padding-bottom: 0.6em; color: #000;}
 
 .static-spacer {height: 80px; width: 100%; float: left;}
-.static-spacer-klarna {height: 100px; width: 100%;}
+.static-spacer-klarna {height: 80px; width: 100%;}
 /* Typography */
 h1, h2, h3, h4, h5 {font-family: "sofia-pro"; display: inline-block;}
 h1 {font-size: 3em; font-weight: 900; font-family: "paralucent"; text-transform: uppercase;}
@@ -160,6 +160,10 @@ h5 {font-size: 1.4em;}
 .count_total {width: 100%; float: left; height: auto; border: 1px solid #F3F3F3; border-bottom: 0px; margin-bottom: 20px; margin-top: 10px;}
 .total_left {width: 50%; text-align: right; background: #FAFAFA; float: left; padding: 10px; border-bottom: 1px solid #f3f3f3;}
 .total_right {width: 50%; text-align: left; background: #fff; float: left; padding: 10px; border-bottom: 1px solid #f3f3f3;}
+
+.total_left_klarna {width: 100%; text-align: center; background: #FAFAFA; float: left; padding: 10px; border-bottom: 1px solid #f3f3f3;}
+.total_right_klarna {width: 100%; text-align: center; background: #fff; float: left; padding: 10px; border-bottom: 1px solid #f3f3f3;}
+
 
 .checkout-button {height: auto; padding: 0.5em 2em; padding-bottom: 0.6em; border: 2px solid #000; border-radius: 2em; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; float: left; background: #94C123; border-color: #94C123; color: #fff; font-size: 0.9em; text-decoration: none; width: 100%; display: block; text-align: center;}
 .checkout-button:hover {background: none; color: #94C123; cursor: pointer;}

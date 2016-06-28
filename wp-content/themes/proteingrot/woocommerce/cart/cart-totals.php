@@ -95,7 +95,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 	<div class="wc-proceed-to-checkout">
-		<?php do_action( 'woocommerce_proceed_to_checkout' ); ?> 
+		<a href="/betalning"><button class="checkout-button">Till betalningen</button></a>
 	</div>
 
 	<?php do_action( 'woocommerce_after_cart_totals' ); ?>
