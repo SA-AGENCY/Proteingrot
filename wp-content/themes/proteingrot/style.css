@@ -34,6 +34,8 @@ section {width: 100%; height: auto; float: left; background-size: cover !importa
 
 .width50 {width: 50%;}
 
+.padding10 {padding: 60px 10%;}
+
 /* Navigation */
 nav {
 	width: 100%;
@@ -142,11 +144,50 @@ h5 {font-size: 1.4em;}
 .btnGreen {background: #94C123; border-color: #94C123; color: #fff; font-size: 0.9em; float: right;}
 .btnGreen:hover {background: none; color: #94C123; cursor: pointer;}
 
+.btnBlack {background: #000; color: #fff; font-size: 0.9em; border-color: #000;}
+.btnBlack:hover {background: #fff; color: #000;}
+
 .lostPassword {font-size: 0.8em; width: auto; height: auto; text-align: left;}
 .lostPassword a {text-decoration: none; color: #94C123;}
 
+/* Cart */
+.shop_table {border-radius: 0px !important; width: 60% !important; float: left;}
+.cart_total {float: right; width: 30%;}
 
+.cart_title {width: 100%; height: auto; float: left; text-align: center; font-size: 1.5em; font-weight: bold; display: block; border-bottom: 0px;}
 
+.count_total {width: 100%; float: left; height: auto; border: 1px solid #F3F3F3; border-bottom: 0px; margin-bottom: 20px; margin-top: 10px;}
+.total_left {width: 50%; text-align: right; background: #FAFAFA; float: left; padding: 10px; border-bottom: 1px solid #f3f3f3;}
+.total_right {width: 50%; text-align: left; background: #fff; float: left; padding: 10px; border-bottom: 1px solid #f3f3f3;}
+
+.checkout-button {height: auto; padding: 0.5em 2em; padding-bottom: 0.6em; border: 2px solid #000; border-radius: 2em; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; float: left; background: #94C123; border-color: #94C123; color: #fff; font-size: 0.9em; text-decoration: none; width: 100%; display: block; text-align: center;}
+.checkout-button:hover {background: none; color: #94C123; cursor: pointer;}
+
+.hold_all {width: 65%; float: left;}
+.cart_content_holder {width: 100%; float: left; border: 1px solid #f3f3f3;}
+.product_img {width: 30%; float: left; height: auto; padding: 15px; box-sizing: border-box; border-right: 1px solid #f3f3f3; border-bottom: 1px solid #f3f3f3;}
+.product_img img {width: 70%; height: auto; margin: 0 auto; margin-left: 15%;}
+.product_info {width: 70%; float: left; height: auto; padding: 15px; border-bottom: 1px solid #f3f3f3;}
+
+.product_coupon {width: 30%; float: left; border-top: 0px;}
+.coupon_code {font-size: 0.8em;}
+
+.product_img:last-child {border-bottom: 0px !important;}
+.product_info:last-child {border-bottom: 0px !important;}
+
+.product_no_border {border-bottom: 0px;}
+
+.quantity input {width: 50px; float: left; border: 0px; border-bottom: 1px solid #f3f3f3; margin-top: 5px;}
+.cart_text {float: left;}
+
+.remove_product {text-decoration: none; color :#000; font-size: 0.9em; float: left; width: 100%; margin-top: 10px;}
+
+.grayBG {background: #FAFAFA;}
+
+.coupon {width: 100%; height: auto; float: left; margin-top: 20px;}
+
+.if_couponCode {font-weight: bold; float: left; color: #000;}
+.if_couponCode {cursor: pointer;}
 
 /* product frontpage testar lite*/
 
@@ -167,14 +208,6 @@ display: none !important;
 .price {
 color: black !important;
 font-size: 1.8em !important;
-}
-
-.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
-background-color: #94C123 !important; border-color: #94C123 !important; color: #fff !important; font-size: 1.2em !important;
-}
-
-.woocommerce #respond:hover input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
-background: none !important; color: #94C123 !important; cursor: pointer !important;
 }
 
 

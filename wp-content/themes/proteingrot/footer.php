@@ -14,7 +14,7 @@
   <span class="small colorBlack textBlock os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">  Proteingröten är inte bara smakligt god, utan även nyttig. Använder du Lifesum för att hålla koll på kosten kommer vår gröt att hjälpa dig på vägen. Gröten är A klassad på Lifesum!
   </span><br>
   
-  <a href="<?php echo get_home_url(); ?>/#Köp"><button class="btn btnGreen floatLeft os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">KÖP GRÖT</button></a>
+  <a href="<?php echo get_home_url(); ?>/#Köp"><button class="btn btnGreen floatLeft os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">Köp gröt</button></a>
  
  </div>
 </section>
