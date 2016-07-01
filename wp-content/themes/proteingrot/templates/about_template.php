@@ -1,6 +1,3 @@
-
-
-
 <?php
 /*
 Template Name: Om gröten
@@ -15,7 +12,7 @@ Template Name: Om gröten
 
 	<p style="color:#fff;">Det är sällan man hinner med en lugn, god & nyttig frukost och det är just därför vi tagit fram vår gröt. Portionsförpackad för att alltid ha perfekt balanserad blandning och fräscht innehåll. Den är enkel att ta med och den smakar tydligen supergott om man går in och kollar vår Instagram ; )
 Jo just det, den innehåller exakt de fetter, proteiner och kolisar du behöver för att kickstarta dagen like a baws. And of course, NO SOCKER!</p>	
-<a href="<?php echo get_home_url(); ?>/#Köp"><button class="btn btnGreen floatLeft os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">Köp gröt</button></a>
+
 
  </div>
 </section>
