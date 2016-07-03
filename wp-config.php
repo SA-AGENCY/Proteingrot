@@ -54,7 +54,8 @@ define('AUTH_SALT',        'im~<o..[t$1`8J;r3Vg`}X7(sLP?]n+^`}Z;JYG~F#7% !_rTes4
 define('SECURE_AUTH_SALT', 'dG<B_20QMUMvB1ClfD`]n1#>_)HXPfg?k>iZt%*7R]z]??eQlA!Lg;`k9[(u{ZU ');
 define('LOGGED_IN_SALT',   '}k9g!.@]}AVW)GSdU@>s;t3Q3 rs~U mJ/-Vz`:r=ktL ;j[.|_nV2S{m^t^_gPb');
 define('NONCE_SALT',       't%$#fcIS#&WGq#[En2a)6M:3Bu_-(C|7qHuqAk![M AK&O)?ka`mU)WhWmKPxujI');
-
+define('WP_HOME','http://woowho-staging-server.se');
+define('WP_HOME','http://woowho-staging-server.se');
 /**#@-*/
 
 /**

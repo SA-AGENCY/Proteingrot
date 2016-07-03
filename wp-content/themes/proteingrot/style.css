@@ -299,6 +299,6 @@ font-size: 1.8em !important;
 .products h3 {width: 100%; height: auto; text-align: center; margin-top: 20px;}
 
 .buynow-button {
-	width: auto; height: auto; padding: 0.5em 2em; padding-bottom: 0.6em; border: 2px solid #000; border-radius: 2em; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; background: #94C123; border-color: #94C123; color: #fff; font-size: 0.9em;
+	width: auto; height: auto; padding: 0.5em 2em; padding-bottom: 0.6em; border: 2px solid #000; border-radius: 2em; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; background: #94C123; border-color: #94C123; color: #fff; font-size: 0.9em; cursor: pointer;
 }
 .buynow-button:hover {background: none; border-color: #fff; color: #fff; cursor: pointer;}

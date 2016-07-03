@@ -49,12 +49,13 @@ function go_home(){
 
 add_action('init','custom_login');
 
+/*
 function custom_login(){
  global $pagenow;
  if( 'wp-login.php' == $pagenow ) {
   wp_redirect('/mitt-konto');
   exit();
  }
-}
+} */
 
 ?>

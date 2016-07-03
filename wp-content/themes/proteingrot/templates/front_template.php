@@ -16,7 +16,7 @@ if( !empty($image) ): ?>
   <span class="massive colorWhite"><?php the_field('front_heading'); ?></span>
   <h4 class="colorWhite textBlock"><?php the_field('front_heading_subtitle'); ?></h4>
   
-  <a href="#Köp"><button class="button frontButton">Köp proteingröt</button></a>
+  <a href="?add-to-cart=33"><button class="button frontButton">Köp proteingröt</button></a>
  </div>
  
  <div class="scrollDown animated bounce infinite"></div>
@@ -56,9 +56,9 @@ if( !empty($image) ): ?>
   </div>
   
   <div class="width50 cell">
-  <span class="medium colorWhite textBlock os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0s">
+  <span class="medium colorWhite textBlock os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">
   Det enkla valet.</span><br>
-  <span class="textBlock colorWhite os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0s">
+  <span class="textBlock colorWhite os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">
   Detta må vara det enklaste valet du gjort i ditt liv, att köpa vår proteingröt är grymt - då vår gröt är the world's most amazing frukost. Så vad väntar du på?
   </span><br><br>
    <a href="?add-to-cart=33"><button class="btn buynow-button floatNone">Köp så det ryker!</button></a>
