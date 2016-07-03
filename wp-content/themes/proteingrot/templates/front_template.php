@@ -43,19 +43,27 @@ if( !empty($image) ): ?>
   
   <div class="width50 cell textCenter">
    <img class="grotpase os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s" src="<?php echo get_template_directory_uri(); ?>/images/grotpase.png">
-   <img class="kanel os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0.3s" src="<?php echo get_template_directory_uri(); ?>/images/cinnamon.png">
   </div>
  
  </div>
 </section>
 
-<section class="product-front">
-<a id="Köp"><span class="massive colorBlack">Köp!</span></a>
-<hr>
-<br>
-<div class="product-center">
-<?php echo do_shortcode('[products ids="33"]'); ?>
-</div>
+<section class="product-front" id="köp">
+<div class="wrapper">
+<div class="row">
+  <div class="width50 cell">
+   <img class="grotpase os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0s" src="<?php echo get_template_directory_uri(); ?>/images/grotpase.png">
+  </div>
+  
+  <div class="width50 cell">
+  <span class="medium colorWhite textBlock os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0s">
+  Det enkla valet.</span><br>
+  <span class="textBlock colorWhite os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0s">
+  Detta må vara det enklaste valet du gjort i ditt liv, att köpa vår proteingröt är grymt - då vår gröt är the world's most amazing frukost. Så vad väntar du på?
+  </span><br><br>
+   <a href="?add-to-cart=33"><button class="btn buynow-button floatNone">Köp så det ryker!</button></a>
+  </div>
+ </div>
 </section>
 <?php get_footer(); ?>
 
