@@ -28,16 +28,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<p class="cart_title">Totalt</p>
     
     <div class="count_total">
-	 <div class="total_left"><?php _e( 'Subtotal', 'woocommerce' ); ?></div>
+	 <div class="total_left"><?php _e( 'Pris', 'woocommerce' ); ?></div>
 	 <div class="total_right"><?php wc_cart_totals_subtotal_html(); ?></div>
 	
-
-	<?php foreach ( WC()->cart->get_coupons() as $code => $coupon ) : ?>
-			<tr class="cart-discount coupon-<?php echo esc_attr( sanitize_title( $code ) ); ?>">
-				<th><?php wc_cart_totals_coupon_label( $coupon ); ?></th>
-				<td data-title="<?php echo esc_attr( wc_cart_totals_coupon_label( $coupon, false ) ); ?>"><?php wc_cart_totals_coupon_html( $coupon ); ?></td>
-			</tr>
-		<?php endforeach; ?>
+     <!-- Kupong -->
+	 <?php foreach ( WC()->cart->get_coupons() as $code => $coupon ) : ?>		
+	  <div class="total_left">Rabatt</div>
+      <div class="total_right"><?php wc_cart_totals_coupon_html( $coupon ); ?></div>	
+	 <?php endforeach; ?>
 
 		<?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>
 

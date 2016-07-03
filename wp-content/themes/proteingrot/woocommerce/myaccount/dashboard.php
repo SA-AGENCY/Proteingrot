@@ -26,20 +26,98 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="wrapper">
 
 <div style="width: 100%; padding: 50px 0px; padding-top: 100px;" class="textCenter">
-<h2>
-	<?php
-		echo sprintf( esc_attr__( 'Välkommen %s%s%s!', 'woocommerce' ), '<strong>', esc_html( $current_user->display_name ), '</strong>', '<a href="' . esc_url( wc_get_endpoint_url( 'customer-logout', '', wc_get_page_permalink( 'myaccount' ) ) ) . '">', '</a>' );
-	?>
-</h2>
 
-<p>
+<?php 
+$my_orders_columns = apply_filters( 'woocommerce_my_account_my_orders_columns', array(
+	'order-number'  => __( 'Order', 'woocommerce' ),
+	'order-date'    => __( 'Date', 'woocommerce' ),
+	'order-status'  => __( 'Status', 'woocommerce' ),
+	'order-total'   => __( 'Total', 'woocommerce' ),
+	'order-actions' => '&nbsp;',
+) );
+
+$customer_orders = get_posts( apply_filters( 'woocommerce_my_account_my_orders_query', array(
+	'numberposts' => $order_count,
+	'meta_key'    => '_customer_user',
+	'meta_value'  => get_current_user_id(),
+	'post_type'   => wc_get_order_types( 'view-orders' ),
+	'post_status' => array_keys( wc_get_order_statuses() )
+) ) );
+
+if ( $customer_orders ) : ?>
+
+<div class="spacer"></div>
+<div class="hold_all textLeft">
+<div class="login">
+<h3>
 	<?php
-		echo sprintf( esc_attr__( 'Här kan du se dina tidigare ordrar samt ändra dina kontaktuppgifter och leveransadress.', 'woocommerce' ), '<a href="' . esc_url( wc_get_endpoint_url( 'orders' ) ) . '">', '</a>', '<a href="' . esc_url( wc_get_endpoint_url( 'edit-address' ) ) . '">', '<a href="' . esc_url( wc_get_endpoint_url( 'edit-account' ) ) . '">' );
+		echo sprintf( esc_attr__( 'Välkommen %s%s%s.', 'woocommerce' ), '<strong>', esc_html( $current_user->display_name ), '</strong>', '<a href="' . esc_url( wc_get_endpoint_url( 'customer-logout', '', wc_get_page_permalink( 'myaccount' ) ) ) . '">', '</a>' );
 	?>
-</p><br>
-<a href="<?php echo wp_logout_url( home_url() ); ?>">Logga ut</a>
+</h3><br><br>
+    Orderhistorik<br>
+	<div class="cart_content_holder">
+   
+    <div class="product_img grayBG">Datum</div>
+    <div class="product_info">Information</div>
+
+	<?php foreach ( $customer_orders as $customer_order ) :
+	$order      = wc_get_order( $customer_order );
+	$item_count = $order->get_item_count();
+	?>
+	
+ 
+	<?php foreach ( $my_orders_columns as $column_id => $column_name ) : ?>
+	
+	 <?php if ( has_action( 'woocommerce_my_account_my_orders_column_' . $column_id ) ) : ?>
+	  <?php do_action( 'woocommerce_my_account_my_orders_column_' . $column_id, $order ); ?>
+	  
+	  <?php elseif ( 'order-number' === $column_id ) : ?>
+		<div class="product_img product_no_border">
+		  
+		  
+		  <?php elseif ( 'order-date' === $column_id ) : ?>
+		  <time datetime="<?php echo date( 'd-m-Y', strtotime( $order->order_date ) ); ?>" title="<?php echo esc_attr( strtotime( $order->order_date ) ); ?>">
+		  
+		  <?php echo date_i18n( get_option( 'date_format' ), strtotime( $order->order_date ) ); ?></time>
+        </div>
+        
+        <div class="product_info">
+	    <span class="orderNum">
+		 Order: <?php echo _x( '#', 'hash before order number', 'woocommerce' ) . $order->get_order_number(); ?>
+        </span>
+							
+
+							<?php elseif ( 'order-status' === $column_id ) : ?>
+								<?php echo wc_get_order_status_name( $order->get_status() ); ?>
+
+							<?php elseif ( 'order-total' === $column_id ) : ?>
+								<?php echo sprintf( _n( '%s for %s item', '%s for %s items', $item_count, 'woocommerce' ), $order->get_formatted_order_total(), $item_count ); ?>
+
+							
+							<?php endif; ?>
+				
+					<?php endforeach; ?>
+	
+			<?php endforeach; ?>
+
+<?php endif; ?>
+		</div>	
+    </div>	
+
+
 </div>
 
+</div>
+
+<div class="cart_total textCenter">
+ <h3>Mitt konto</h3>
+ <button class="checkout-button" style="margin-top: 10px;">Kontoinställningar</button>
+ <button class="checkout-button" style="margin-top: 10px;">Leveransadress</button>	
+ <a href="<?php echo wp_logout_url( $redirect ); ?>" class="signOut">Logga ut</a>
+</div>
+ 
+ 
+<div class="spacer"></div>
 </div>
 <?php
 	/**

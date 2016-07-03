@@ -1,4 +1,13 @@
 $('body').css('opacity', 1);
+$('.discountOverlay').hide();
+
+$('.if_couponCode').click(function() {
+  $('.discountOverlay').fadeIn(500);
+});
+
+$('.discountClose').click(function() {
+	$('.discountOverlay').fadeOut(500);
+});
 
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();

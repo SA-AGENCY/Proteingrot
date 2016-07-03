@@ -23,9 +23,31 @@ if ( ! defined( 'ABSPATH' ) ) {
 do_action( 'woocommerce_before_cart' ); ?>
 
 <section class="padding10">
- <?php //wc_print_notices(); ?>
+ 
+ <div class="discountOverlay">
+  <div class="discountHolder">
+   <div class="discountBox">
+   <span class="discountClose"><i class="fa fa-times"></i></span>
+    <b>Rabattkupong</b>
+    
+    
+    <form action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="name">
+      <input type="text" class="input-text mdl-textfield__input" name="coupon_code" id="coupon_code" />
+      <label class="mdl-textfield__label" for="coupon_code">Ange din rabattkupong</label>
+    </div>
+    
+    <input type="submit" class="btn btnGreen" name="apply_coupon" value="Ge mig rabatt!">
+    <?php do_action( 'woocommerce_cart_coupon' ); ?>
+    
+    </form>
+    
+   </div>
+  </div>
+ </div>
  
  <div class="hold_all">
+  <?php wc_print_notices(); ?>
  <div class="cart_content_holder">
  <form action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
   <?php do_action( 'woocommerce_before_cart_table' ); ?>
