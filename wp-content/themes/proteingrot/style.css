@@ -142,7 +142,7 @@ h5 {font-size: 1.4em;}
 .footer-sub .holder {display: table-cell; width: 20%; vertical-align: middle; padding: 2em;}
 .footer-sub img {width: 100%; max-width: 100%; -webkit-filter: grayscale(100%); filter: grayscale(100%);}
 
-.footerLast {width: 100%; height: auto; padding: 30px 0px; background: #1E1E1E; text-align: center; color: #fff; font-size: 0.9em;}
+.footerLast {width: 100%; height: auto; padding: 30px 0px; background: #74AF26; text-align: center; color: #fff; font-size: 0.9em;}
 
 /* WooCommerce Proteingröt */
 .myaccount {text-align: center;}
