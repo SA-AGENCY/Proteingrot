@@ -22,8 +22,9 @@
   <?php wp_nav_menu(); ?>
   
   <div class="buyContainer">
-  <a href="https://www.facebook.com/proteingrot/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-  <a href="https://instagram.com/proteingrot.se"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+  <a href="https://www.klarna.se"><img src="https://cdn.klarna.com/1.0/shared/image/generic/logo/fi_fi/basic/blue-black.png?width=80"></a>
+  <a href="https://www.facebook.com/proteingrot/"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
+  <a href="https://instagram.com/proteingrot.se"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
    <?php if ( is_user_logged_in() ) { ?>
      <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Mitt konto','woothemes'); ?>"><span class="signin"><?php _e('Mitt konto','woothemes'); ?></span></a>
    <?php } else { ?>
