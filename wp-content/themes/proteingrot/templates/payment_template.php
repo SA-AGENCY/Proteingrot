@@ -50,7 +50,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 <?php endif; ?>
 
 <section class="padding10">
-<div class="hold_all">
+<div class="hold_all" style="margin: 0 auto; float: none">
  <div class="cart_content_holder" style="border: 0px;">
 <?php echo do_shortcode('[woocommerce_klarna_checkout]'); ?>
  </div>
@@ -59,51 +59,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 <div class="cart_total">
  <?php do_action( 'woocommerce_before_cart_totals' ); ?>
 
-	<p class="cart_title">Totalt</p>
-    <?php do_action( 'woocommerce_before_cart_table' ); ?>
-  
-    <?php do_action( 'woocommerce_before_cart_contents' ); ?>
-    
-    <?php
-   foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
-     $_product   = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
-	 $product_id = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key );
-	 
-	 if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 
-	 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
-	 $product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
-	?>
-    
-    
-    <div class="count_total">
-	 <div class="total_left_klarna">
-	 <?php if ( ! $product_permalink ) {
-	 	echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;';
-	 } else {
-		echo apply_filters( 'woocommerce_cart_item_name', sprintf( '<div class="%s">%s</div>', esc_url( $product_permalink ), $_product->get_title() ), $cart_item, $cart_item_key );
-	} echo WC()->cart->get_item_data( $cart_item ); ?></div>
-	 
-     
-     <div class="total_right_klarna">
-	 <?php echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );	?> 
-	 
-	 <?php if ( $_product->is_sold_individually() ) {
-		   $product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
-		   } else {
-		   echo " x ".$cart_item['quantity'];
-		   }
-     ?>
-	 
-	 <?php echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); ?></div>
-    </div>
-    
 	
-	<?php
-			}
-		}
-
-		do_action( 'woocommerce_cart_contents' );
-	?>
  
  </div>
 </section>

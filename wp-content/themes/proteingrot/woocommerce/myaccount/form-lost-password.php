@@ -19,17 +19,20 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+ ?>
+<section class="myaccount lg">
+  <div class="wrapper">
+  <div class="spacer"></div>
 
-wc_print_notices(); ?>
+<form method="post" class="login" style="text-align: left;">
 
-<form method="post" class="woocommerce-ResetPassword lost_reset_password">
+	Glömt ditt lösenord?
 
-	<p><?php echo apply_filters( 'woocommerce_lost_password_message', __( 'Lost your password? Please enter your username or email address. You will receive a link to create a new password via email.', 'woocommerce' ) ); ?></p>
-
-	<p class="woocommerce-FormRow woocommerce-FormRow--first form-row form-row-first">
-		<label for="user_login"><?php _e( 'Username or email', 'woocommerce' ); ?></label>
-		<input class="woocommerce-Input woocommerce-Input--text input-text" type="text" name="user_login" id="user_login" />
-	</p>
+    
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="user_login">
+      <input type="text" class="input-text mdl-textfield__input" name="user_login" id="user_login" value="<?php if ( ! empty( $_POST['username'] ) ) echo esc_attr( $_POST['username'] ); ?>" />
+      <label class="mdl-textfield__label" for="user_login">Användarnamn eller e-post</label>
+    </div>
 
 	<div class="clear"></div>
 
@@ -37,9 +40,13 @@ wc_print_notices(); ?>
 
 	<p class="woocommerce-FormRow form-row">
 		<input type="hidden" name="wc_reset_password" value="true" />
-		<input type="submit" class="woocommerce-Button button" value="<?php esc_attr_e( 'Reset Password', 'woocommerce' ); ?>" />
+		<input type="submit" class="btn btnGreen" value="<?php esc_attr_e( 'Återställ lösenord', 'woocommerce' ); ?>" />
 	</p>
 
 	<?php wp_nonce_field( 'lost_password' ); ?>
 
 </form>
+
+</div>
+<div class="spacer"></div>
+</section>

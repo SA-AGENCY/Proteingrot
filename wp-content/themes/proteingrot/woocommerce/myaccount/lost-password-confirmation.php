@@ -20,8 +20,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-wc_print_notices();
-wc_print_notice( __( 'Password reset email has been sent.', 'woocommerce' ) );
 ?>
 
-<p><?php echo apply_filters( 'woocommerce_lost_password_message', __( 'A password reset email has been sent to the email address on file for your account, but may take several minutes to show up in your inbox. Please wait at least 10 minutes before attempting another reset.', 'woocommerce' ) ); ?></p>
+<section class="myaccount lg">
+  <div class="wrapper">
+  <div class="spacer"></div>
+  
+<p><?php echo apply_filters( 'woocommerce_lost_password_message', __( 'Vi har skickat ett e-mail med anvisningar om hur du kan återställa ditt lösenord.<br> Tänk på att det kan ta flera minuter innan e-mailet kommer fram.', 'woocommerce' ) ); ?></p>
+
+</div>
+<div class="spacer"></div>
+</section>

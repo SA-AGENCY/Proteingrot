@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 do_action( 'woocommerce_before_cart' ); ?>
 
 <section class="padding10">
- <?php wc_print_notices(); ?>
+ <?php //wc_print_notices(); ?>
  
  <div class="hold_all">
  <div class="cart_content_holder">
