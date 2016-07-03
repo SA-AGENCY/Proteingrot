@@ -79,7 +79,7 @@ nav .buyContainer .cart .amount {padding: 0em; border: 0em;}
 
 .static {border-bottom: 1px solid #f4f4f4; background: #fff;}
 .static a {color: #000;}
-.static .logo {background: url(images/logo_black.png) center center no-repeat;}
+.static .logo {background: url(images/logo_green.png) center center no-repeat;}
 .static .buyContainer span {border: 2px solid #000; border-radius: 2em; padding: 0.5em 2em; padding-bottom: 0.6em; color: #000;}
 
 .static-spacer {height: 80px; width: 100%; float: left;}
@@ -104,13 +104,21 @@ h5 {font-size: 1.4em;}
 .colorGreen {color: #94C123;}
 .colorGreenLight {color: #99e336;}
 
-
+.aboutHold {margin: 0 auto; text-align: center; width: 80%;}
 /* Buttons */
 .button {cursor: pointer;}
 .frontButton {width: auto; height: auto; border: 2px solid #74AF26; padding: 0.7em 2em; padding-bottom: 0.8em; background: #74AF26; border-radius: 2em; color: #fff; font-weight: bold; font-size: 1.1em; margin-top: 2em; text-transform: uppercase; letter-spacing: 0.1em;}
 
 /* Background */
 .bgWood {background: url(images/bg/woodbg.jpg);}
+.bgAbout {
+	background: #78c12a; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #78c12a 0%, #74af26 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover,  #78c12a 0%,#74af26 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center,  #78c12a 0%,#74af26 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78c12a', endColorstr='#74af26',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	padding: 100px;
+}
 
 .lifesum {padding: 60px 0px; background: #FAFAF5;}
 .lifesumbg {top: 0; right: 0; max-width: 250px; position: absolute;}

@@ -49,20 +49,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 	  
       <input type="submit" class="btn btnGreen" name="login" value="<?php esc_attr_e( 'Logga in', 'woocommerce' ); ?>" />
 	
-      <label for="rememberme" class="inline">
-	    <input name="rememberme" type="checkbox" id="rememberme" value="forever" /> 
-		<?php _e( 'Kom ihåg mig', 'woocommerce' ); ?>
-	  </label>
+     
      </p>
      
      <p class="lostPassword">
-	  <a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php _e( 'Glömt ditt lösenord?', 'woocommerce' ); ?></a>
+	  <a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php _e( 'Glömt ditt lösenord?', 'woocommerce' ); ?></a><br>
+      <a href="/sign-up">Eller skapa ett konto</a>
 	 </p>
 
 	 <?php do_action( 'woocommerce_login_form_end' ); ?>
   
    </form>
   </div>
+  <div class="spacer"></div>
 </section>
 
 <?php do_action( 'woocommerce_after_customer_login_form' ); ?>
