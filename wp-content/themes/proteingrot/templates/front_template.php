@@ -13,7 +13,7 @@ if( !empty($image) ): ?>
 <div class="shadow"></div>
  <div class="cell">
 	<div class="width50 cell">
-  <span class="massive colorWhite"><img src="http://localhost:9000/wp-content/themes/proteingrot/images/awsome-frukost.svg" style="height:250px;width:250px;"></span>
+  <span class="massive colorWhite"><img src="<?php echo get_template_directory_uri(); ?>/images/awsome-frukost.svg" style="height:250px;width:250px;"></span>
   </div>
   <!--<div class="width50 cell textCenter">
   <img class="grotpase" src="<?php echo get_template_directory_uri(); ?>/images/grotpase.png">
@@ -24,6 +24,9 @@ ATT SMAKEN SEDAN ÄR GUDOMLIG<br>
 MAKES IT A NO-BRAINER.</h4>
   
   <a href="?add-to-cart=33"><button class="button frontButton">Köp proteingröt</button></a>
+  <br>
+  <br>
+  <br>
  </div>
  
  <div class="scrollDown animated bounce infinite"></div>
