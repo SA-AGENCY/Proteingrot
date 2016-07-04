@@ -30,7 +30,8 @@
  </div>
 </section>
 
-<section class="footerLast">
+<section class="footerLast" style="background-color:#74AF27;">
+ <img src="http://localhost:9000/wp-content/themes/proteingrot/images/SF_pos.svg" style="width:350px;height:350px;"><br>
  Proteingröt drivs av SuperFuel AB<br>
  All rights reserved Superfuel AB 2016
 </section>
