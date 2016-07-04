@@ -22,4 +22,23 @@ info@proteingrot.se</p>
 </section>
 
 
-<?php get_footer(); ?>
+<section class="footerLast" style="background-color:#74AF27;">
+ <img src="<?php echo get_template_directory_uri(); ?>/images/SF_pos.svg" style="width:350px;height:350px;"><br>
+ Proteingröt drivs av SuperFuel AB<br>
+ All rights reserved Superfuel AB 2016
+</section>
+<?php wp_footer(); ?> 
+<script src="<?php echo get_template_directory_uri(); ?>/resources/js/jquery.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/resources/js/jquery.waypoints.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/resources/js/material.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/resources/js/onView.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/resources/js/wodry.min.js"></script>
+<script>
+ $('.wodryRX').wodry({
+    animation: 'rotateX',
+    delay: 1000,
+    animationDuration: 800
+});
+ </script>
+</body>
+</html>

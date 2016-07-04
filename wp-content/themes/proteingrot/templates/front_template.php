@@ -22,8 +22,8 @@ if( !empty($image) ): ?>
 ATT STARTA DAGEN LIKE A BAWS!<br>
 ATT SMAKEN SEDAN ÄR GUDOMLIG<br>
 MAKES IT A NO-BRAINER.</h4>
-  
-  <a href="?add-to-cart=33"><button class="button frontButton">Köp proteingröt</button></a>
+  <br>
+  <a href="?add-to-cart=33"><button class="btn btnGreen floatRight">Köp proteingröt</button></a>
   <br>
   <br>
   <br>
@@ -31,6 +31,25 @@ MAKES IT A NO-BRAINER.</h4>
  
  <div class="scrollDown animated bounce infinite"></div>
 </section>
+
+<section style="background-color:#74af26;">
+<div class="wrapper" style="text-align:center;">
+	<h2 id="#anchorprotein" style="color:#fff;"> <b>Varför proteingröt?</b> </h2><br>
+
+	<p style="color:#fff;">Det är sällan man hinner med en lugn, god & nyttig frukost och<br>
+	det är just därför vi tagit fram vår gröt. Portionsförpackad för<br>
+	att alltid ha perfekt balanserad blandning och fräscht innehåll.<br>
+	Den är enkel att ta med och den smakar tydligen supergott om<br>
+	man går in och kollar vår Instagram ; )<br><br>
+Jo just det, den innehåller exakt de fetter, proteiner och kolisar<br>
+ du behöver för att kickstarta dagen like a baws. And of course,<br><b> NO SOCKER!</b>
+</p>	
+
+
+ </div>
+</section>
+
+
 
 <section class="bgWood">
  <div class="wrapper">
