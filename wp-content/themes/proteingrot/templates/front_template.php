@@ -23,7 +23,7 @@ ATT STARTA DAGEN LIKE A BAWS!<br>
 ATT SMAKEN SEDAN ÄR GUDOMLIG<br>
 MAKES IT A NO-BRAINER.</h4>
   <br>
-  <a href="?add-to-cart=33"><button class="btn btnGreen floatRight">Köp proteingröt</button></a>
+  <a href="?add-to-cart=33"><button class="btn btnGreen">Köp proteingröt</button></a>
   <br>
   <br>
   <br>

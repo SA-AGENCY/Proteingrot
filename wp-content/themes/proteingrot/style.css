@@ -68,6 +68,7 @@ nav .logo {width: 189px; height: 27px; float: left; background: url(images/logo-
 nav ul {list-style: none; display: inline-block; width: auto; height: auto; padding: 0px; margin: 0 auto; position: relative; z-index: 100;}
 nav ul li {list-style: none; margin-right: 2.5em; display: inline-block;}
 nav ul li a {color: #fff; font-weight: bold; text-transform: uppercase; text-decoration: none; font-size: 1.1em;}
+nav ul li a:hover {text-decoration: underline;}
 nav ul li:last-child {margin-right: 0em;}
 
 nav .buyContainer {width: auto; height: auto; float: right; display: inline-block; position: fixed; top: 0; right: 50px; z-index: 100;}
