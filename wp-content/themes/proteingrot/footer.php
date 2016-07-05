@@ -1,4 +1,4 @@
-<section class="lifesum" style="position: relative;">
+<!-- <section class="lifesum" style="position: relative;">
  <div class="wrapper">
  <img src="<?php echo get_template_directory_uri(); ?>/images/bg/lifesumbg.png" class="lifesumbg">
  <img src="<?php echo get_template_directory_uri(); ?>/images/bg/lifesumbgpepper.png" class="lifesumbgPepper">
@@ -17,7 +17,34 @@
   <a href="?add-to-cart=33"><button class="btn btnGreen floatLeft os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">Köp gröt</button></a>
  
  </div>
+</section> -->
+
+<section class="bgWood">
+ <div class="wrapper">
+
+  <div class="width50 cell">
+   <span class="medium colorWhite textBlock os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0s">So good yet so, </span><br>
+   <span class="medium colorWhite textBlock os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0s"><i class="fa fa-check" aria-hidden="true"></i> 185 Kcal</span>
+   <span class="medium colorWhite textBlock os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0s"><i class="fa fa-check" aria-hidden="true"></i> 22% Protein</span>
+   <span class="medium colorWhite textBlock os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0s"><i class="fa fa-check" aria-hidden="true"></i> 6% Chiafrön</span><br>
+   
+   <span class="textBlock colorWhite os-animation" data-os-animation="bounceInLeft" data-os-animation-delay="0s">
+   Ingredienser:
+   <b>Havregryn</b>, <b>rågflingor</b>, <b>vassleproteinkoncentrat
+   (mjölk, sojalecitin)</b>, chiafrön, sockerbetsfiber,
+   äppeltärningar, solroslecitin, kanel,
+   natriumklorid, arom.
+   </span>
+   
+  </div>
+  
+  <div class="width50 cell textCenter">
+   <img class="grotpase os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s" src="<?php echo get_template_directory_uri(); ?>/images/grotpase.png">
+  </div>
+ 
+ </div>
 </section>
+
 
 <section class="footer-sub">
  <div class="wrapper">
