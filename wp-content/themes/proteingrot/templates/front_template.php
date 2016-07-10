@@ -55,8 +55,8 @@ Jo just det, den innehåller exakt de fetter, proteiner och kolisar<br>
 			<th class="product-remove">&nbsp;</th>
 			<th class="product-thumbnail">&nbsp;</th>
 			<th class="">&nbsp;</th>
-			<th class="product-price">&nbsp;<?php/** _e( 'Pris', 'woocommerce' ); **/?></th>
-			<th class="product-quantity">&nbsp;<?php/** _e( 'Antal', 'woocommerce' ); **/?></th>
+			<th class="product-price"><?php _e( 'Pris', 'woocommerce' ); ?></th>
+			<th class="product-quantity"><?php _e( 'Antal', 'woocommerce' ); ?></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -72,17 +72,6 @@ Jo just det, den innehåller exakt de fetter, proteiner och kolisar<br>
 				?>
 				<tr class="<?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
 
-					<td class="product-remove">
-						<?php
-							echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
-								'<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
-								esc_url( WC()->cart->get_remove_url( $cart_item_key ) ),
-								__( 'Remove this item', 'woocommerce' ),
-								esc_attr( $product_id ),
-								esc_attr( $_product->get_sku() )
-							), $cart_item_key );
-						?>
-					</td>
 
 					<td class="product-thumbnail">
 						<?php
@@ -114,13 +103,13 @@ Jo just det, den innehåller exakt de fetter, proteiner och kolisar<br>
 						?>
 					</td>
 
-					<td class="product-price" data-title="<?php _e( 'Price', 'woocommerce' ); ?>"><?php _e( 'Pris', 'woocommerce' ); ?>
+					<td class="product-price" data-title="<?php _e( 'Price', 'woocommerce' ); ?>">
 						<?php
 							echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
 						?>
 					</td>
 
-					<td class="product-quantity" data-title="<?php _e( 'Quantity', 'woocommerce' ); ?>"><?php _e( 'Antal', 'woocommerce' ); ?>
+					<td class="product-quantity" data-title="<?php _e( 'Quantity', 'woocommerce' ); ?>">
 						<?php
 							if ( $_product->is_sold_individually() ) {
 								$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
