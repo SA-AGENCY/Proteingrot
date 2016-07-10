@@ -58,6 +58,7 @@
 </section>
 
 <section class="footerLast" style="background-color:#74AF27;">
+ <?php echo do_shortcode('[instagram-feed id="1782467428" showheader=false background=#74AF27]'); ?>
  <img src="<?php echo get_template_directory_uri(); ?>/images/SF_pos.svg" style="width:350px;height:350px;"><br>
  Proteingröt drivs av SuperFuel AB<br>
  All rights reserved Superfuel AB 2016
