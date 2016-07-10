@@ -66,7 +66,7 @@ section {width: 100%; height: auto; float: left; background-size: cover !importa
 
 .padding10 {padding: 60px 10%;}
 
-.most-awesome {width: 250px; height: 250px; position: absolute; left: 50px; top: 100px; z-index: 10;}
+.most-awesome {width: 200px; height: 200px; position: absolute; left: 50px; top: 100px; z-index: 10;}
 .frontTitle {max-width: 500px; margin: 0 auto; text-align: center; text-transform: uppercase; margin-bottom: 1em;   position: relative; z-index: 10;}
 .buyfront {font-size: 1.2em !important; text-transform: uppercase; font-weight: bold; position: relative; z-index: 10;}
 .buyfront:hover {background: #82AA1D !important; color: #fff !important; border-color: #82AA1D !important;} 
@@ -95,7 +95,7 @@ nav ul li a {color: #fff; font-weight: bold; text-transform: uppercase; text-dec
 nav ul li a:hover {text-decoration: underline;}
 nav ul li:last-child {margin-right: 0em;}
 
-nav .buyContainer {width: auto; height: auto; float: right; display: inline-block; position: fixed; top: 0; right: 50px; z-index: 100;}
+nav .buyContainer {width: auto; height: auto; float: right; display: inline-block; position: fixed; top: 0; right: 50px; z-index: 100; font-size: 0.9em;}
 nav .buyContainer span {border: 2px solid #fff; border-radius: 2em; padding: 0.5em 2em; padding-bottom: 0.6em; color: #fff;}
 nav .buyContainer a {color: #fff; text-decoration: none !important;}
 nav .buyContainer i {margin-right: 0.5em;}
