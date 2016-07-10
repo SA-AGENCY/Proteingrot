@@ -1,2 +1,2 @@
-<?php header('Location: localhost:9000/betalning'); ?>
+<?php header('Location: /betalning'); ?>
 <script>window.location.replace("http://localhost:9000/betalning");</script>
