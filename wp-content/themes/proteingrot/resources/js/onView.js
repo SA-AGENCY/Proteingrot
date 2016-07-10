@@ -9,6 +9,8 @@ $('.discountClose').click(function() {
 	$('.discountOverlay').fadeOut(500);
 });
 
+
+
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
@@ -44,3 +46,4 @@ function onScrollInit( items, trigger ) {
 
  onScrollInit( $('.os-animation') );
  onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
+ 

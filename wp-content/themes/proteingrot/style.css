@@ -34,6 +34,55 @@ section {width: 100%; height: auto; float: left; background-size: cover !importa
   height: 100vh;
  }
  
+ .shopSection {
+  background: url(images/bg/shop.jpg);
+ }
+ 
+ .shopHolder {
+   width: 90%;
+   max-width: 400px;
+   margin: 0 auto;
+   background: #fff;
+   position: relative;
+ }
+ 
+ .freeshipping {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 100px;
+  height: 100px;
+  background: url(images/splash.svg); 
+ }
+ 
+ .shopTitle {
+   background: #74AF26;
+   font-weight: bold;
+   font-size: 1.5em;
+   padding: 0.6em;
+   text-align: center;
+   width: 100%;
+   float: left;
+   color: #fff; 
+   text-transform: uppercase;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+.mainShop {
+   padding: 1em;
+   float: left;
+   width: 100%;
+   background: #fff;
+   text-align: center;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+
+.mainShop .title {font-size: 2.5em; font-weight: bold; display: block;}
+.colorRed {color: #C1292E; margin-left: 0.5em;}
+
+.deliveryNotice {font-size: 0.8em; display: block; margin-top: 1em; float: left;}
 
 .frontPicture {
   position: absolute;
@@ -91,8 +140,12 @@ nav .logo {width: 189px; height: 27px; float: left; background: url(images/logo-
 
 nav ul {list-style: none; display: inline-block; width: auto; height: auto; padding: 0px; margin: 0 auto; position: relative; z-index: 100;}
 nav ul li {list-style: none; margin-right: 2.5em; display: inline-block;}
-nav ul li a {color: #fff; font-weight: bold; text-transform: uppercase; text-decoration: none; font-size: 1.1em;}
-nav ul li a:hover {text-decoration: underline;}
+nav ul li a {color: #fff; font-weight: bold; text-transform: uppercase; text-decoration: none; font-size: 1.1em; -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;}
+nav ul li a:hover {color: #74AF26;}
 nav ul li:last-child {margin-right: 0em;}
 
 nav .buyContainer {width: auto; height: auto; float: right; display: inline-block; position: fixed; top: 0; right: 50px; z-index: 100; font-size: 0.9em;}
@@ -146,7 +199,7 @@ h5 {font-size: 1.4em;}
 .frontButton {width: auto; height: auto; border: 2px solid #74AF26; padding: 0.7em 2em; padding-bottom: 0.8em; background: #74AF26; border-radius: 2em; color: #fff; font-weight: bold; font-size: 1.1em; margin-top: 2em; text-transform: uppercase; letter-spacing: 0.1em;}
 
 /* Background */
-.bgWood {background: url(images/bg/woodbg.jpg);}
+.bgWood {background: #74AF27;}
 .bgAbout {
 	background: #78c12a; /* Old browsers */
 	background: -moz-radial-gradient(center, ellipse cover,  #78c12a 0%, #74af26 100%); /* FF3.6-15 */
@@ -213,6 +266,7 @@ h5 {font-size: 1.4em;}
 .total_left_klarna {width: 100%; text-align: center; background: #FAFAFA; float: left; padding: 10px; border-bottom: 1px solid #f3f3f3;}
 .total_right_klarna {width: 100%; text-align: center; background: #fff; float: left; padding: 10px; border-bottom: 1px solid #f3f3f3;}
 
+.checkout {display: block; width: 100%; margin: 1em 0em; float: left;}
 
 .checkout-button {height: auto; padding: 0.5em 2em; padding-bottom: 0.6em; border: 2px solid #000; border-radius: 2em; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; float: left; background: #94C123; border-color: #94C123; color: #fff; font-size: 0.9em; text-decoration: none; width: 100%; display: block; text-align: center;}
 .checkout-button:hover {background: none; color: #94C123; cursor: pointer;}
@@ -231,7 +285,7 @@ h5 {font-size: 1.4em;}
 
 .product_no_border {border-bottom: 0px;}
 
-.quantity input {width: 50px; float: left; border: 0px; border-bottom: 1px solid #f3f3f3; margin-top: 5px;}
+.quantity input {width: 50%; margin: 0 auto; border: 0px; border: 1px solid #D5D5D5; border-radius: 5px; margin-top: 5px; padding: 0.5em; text-align: center;}
 .cart_text {float: left;}
 
 .remove_product {text-decoration: none; color :#000; font-size: 0.9em; float: left; width: 100%; margin-top: 10px;}
@@ -240,7 +294,7 @@ h5 {font-size: 1.4em;}
 
 .coupon {width: 100%; height: auto; float: left; margin-top: 20px;}
 
-.if_couponCode {font-weight: bold; float: left; color: #000;}
+.if_couponCode {font-weight: bold; color: #000; margin-top: 0.5em; font-size: 0.9em; display: inline-block;}
 .if_couponCode {cursor: pointer;}
 
 /* product frontpage testar lite*/

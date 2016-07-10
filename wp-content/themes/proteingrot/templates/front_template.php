@@ -3,7 +3,8 @@
 Template Name: Startsida
 */
 ?>
-<?php get_header(); ?>
+<?php get_header(); 
+do_action( 'woocommerce_before_cart' ); ?>
 
 <?php 
 $image = get_field('front_picture');
@@ -28,7 +29,7 @@ if( !empty($image) ): ?>
  <div class="scrollDown animated bounce infinite"></div>
 </section>
 
-<section style="background-color:#74af26;">
+<section style="background-color:#74af26; padding: 100px 0px;">
 <div class="wrapper" style="text-align:center;">
 	<h2 id="#anchorprotein" style="color:#fff;"> <b>Varför proteingröt?</b> </h2><br>
 
@@ -44,23 +45,13 @@ Jo just det, den innehåller exakt de fetter, proteiner och kolisar<br>
 
  </div>
 </section>
-<section>
+<section class="shopSection fullSize row textCenter">
+<div class="cell">
+	
 <form action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 
 <?php do_action( 'woocommerce_before_cart_table' ); ?>
-
-<table class="shop_table shop_table_responsive cart" cellspacing="0">
-	<thead>
-		<tr>
-			<th class="product-remove">&nbsp;</th>
-			<th class="product-thumbnail">&nbsp;</th>
-			<th class="">&nbsp;</th>
-			<th class="product-price"><?php _e( 'Pris', 'woocommerce' ); ?></th>
-			<th class="product-quantity"><?php _e( 'Antal', 'woocommerce' ); ?></th>
-		</tr>
-	</thead>
-	<tbody>
-		<?php do_action( 'woocommerce_before_cart_contents' ); ?>
+<?php do_action( 'woocommerce_before_cart_contents' ); ?>
 
 		<?php
 		foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
@@ -70,47 +61,42 @@ Jo just det, den innehåller exakt de fetter, proteiner och kolisar<br>
 			if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
 				$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
 				?>
-				<tr class="<?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
+  
+<!-- Coupons -->
 
+ <div class="discountOverlay">
+  <div class="discountHolder">
+   <div class="discountBox">
+   <span class="discountClose"><i class="fa fa-times"></i></span>
+    <b>Rabattkupong</b>
+    
+    
+    <form action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="name">
+      <input type="text" class="input-text mdl-textfield__input" name="coupon_code" id="coupon_code" />
+      <label class="mdl-textfield__label" for="coupon_code">Ange din rabattkupong</label>
+    </div>
+    
+    <input type="submit" class="btn btnGreen" name="apply_coupon" value="Ge mig rabatt!">
+    <?php do_action( 'woocommerce_cart_coupon' ); ?>
+    
+    </form>
+    
+   </div>
+  </div>
+ </div>
+ 
+ <!-- End Coupons -->      
+        
+      
+<div class="shopHolder">
+<div class="freeshipping"></div>
+<div class="shopTitle">Beställ</div>
+<div class="mainShop">
+<span class="title">8-pack <span class="colorRed">149:-</span></span>
 
-					<td class="product-thumbnail">
-						<?php
-							$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
-
-							if ( ! $product_permalink ) {
-								echo $thumbnail;
-							} else {
-								printf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $thumbnail );
-							}
-						?>
-					</td>
-
-					<td class="product-name" data-title="<?php _e( 'Product', 'woocommerce' ); ?>">
-						<?php
-							if ( ! $product_permalink ) {
-								echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;';
-							} else {
-								echo apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $_product->get_title() ), $cart_item, $cart_item_key );
-							}
-
-							// Meta data
-							echo WC()->cart->get_item_data( $cart_item );
-
-							// Backorder notification
-							if ( $_product->backorders_require_notification() && $_product->is_on_backorder( $cart_item['quantity'] ) ) {
-								echo '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'woocommerce' ) . '</p>';
-							}
-						?>
-					</td>
-
-					<td class="product-price" data-title="<?php _e( 'Price', 'woocommerce' ); ?>">
-						<?php
-							echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
-						?>
-					</td>
-
-					<td class="product-quantity" data-title="<?php _e( 'Quantity', 'woocommerce' ); ?>">
-						<?php
+<div class="checkout">
+<?php
 							if ( $_product->is_sold_individually() ) {
 								$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
 							} else {
@@ -124,51 +110,32 @@ Jo just det, den innehåller exakt de fetter, proteiner och kolisar<br>
 
 							echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item );
 						?>
-					</td>
-				</tr>
-				<?php
-			}
-		}
-
-		do_action( 'woocommerce_cart_contents' );
-		?>
-		<tr>
-			<td colspan="6" class="actions">
-
-				<?php if ( wc_coupons_enabled() ) { ?>
-					<div class="coupon">
-
-						<label for="coupon_code"><?php _e( 'Coupon', 'woocommerce' ); ?>:</label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" /> <input type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply Coupon', 'woocommerce' ); ?>" />
-
-						<?php do_action( 'woocommerce_cart_coupon' ); ?>
-					</div>
-				<?php } ?>
-
-				<input type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update Cart', 'woocommerce' ); ?>" />
-
-				<?php do_action( 'woocommerce_cart_actions' ); ?>
-
-				<?php wp_nonce_field( 'woocommerce-cart' ); ?>
-			</td>
-		</tr>
-
-	</tbody>
-</table>
-
-<?php do_action( 'woocommerce_after_cart_table' ); ?>
-
-</form>
-<div class="cart-collaterals">
-
-	<?php do_action( 'woocommerce_cart_collaterals' ); ?>
-
 </div>
 
+<div class="checkout">
+<?php }} do_action( 'woocommerce_cart_contents' ); ?>
+<input type="submit" class="btn btnGreen floatNone" name="update_cart" value="<?php esc_attr_e( 'Till kassan', 'woocommerce' ); ?>" /><br>
+<span href="#" class="if_couponCode">Rabattkupong?</span>
+</div>
+
+<span class="deliveryNotice">Vid beställning av mer än ett 8 pack skickas det med DHL.
+Levereras på 1-3 arbetsdagar.</span>
+</div>
+</div>  
+
+
+
+
+
+<?php do_action( 'woocommerce_cart_actions' ); ?>
+<?php wp_nonce_field( 'woocommerce-cart' ); ?>
+<?php do_action( 'woocommerce_after_cart_contents' ); ?>
+<?php do_action( 'woocommerce_after_cart_table' ); ?>
+        
+
+</div>
+</form>
 <?php do_action( 'woocommerce_after_cart' ); ?>
-
-
-
-
 </section>
 
 
