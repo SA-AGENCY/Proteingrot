@@ -22,18 +22,11 @@
   <?php wp_nav_menu(); ?>
   
   <div class="buyContainer">
-  <a href="https://www.klarna.se"><img src="https://cdn.klarna.com/1.0/shared/image/generic/logo/fi_fi/basic/blue-black.png?width=80"></a>
-  <a href="https://www.facebook.com/proteingrot/"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
-  <a href="https://instagram.com/proteingrot.se"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
    <?php if ( is_user_logged_in() ) { ?>
      <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Mitt konto','woothemes'); ?>"><span class="signin"><?php _e('Mitt konto','woothemes'); ?></span></a>
    <?php } else { ?>
  	 <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Logga in','woothemes'); ?>"><span class="signin"><?php _e('Logga in','woothemes'); ?></span></a>
  <?php } ?>
-   <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>">
-   <span class="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
-   <?php echo sprintf (_n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
-   </span></a>
   </div>
   
  </div>

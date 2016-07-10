@@ -8,25 +8,21 @@ Template Name: Startsida
 <?php 
 $image = get_field('front_picture');
 if( !empty($image) ): ?>
-<section class="row fullSize textCenter" style="background: url(<?php echo $image['url']; ?>) center;" >
+<section class="row fullSize textCenter">
+<div class="frontPicture zoomHover"></div>
 <?php endif; ?>
 <div class="shadow"></div>
  <div class="cell">
 	<div class="width50 cell">
-  <span class="massive colorWhite"><img src="<?php echo get_template_directory_uri(); ?>/images/awsome-frukost.svg" style="height:250px;width:250px;"></span>
+  <img src="<?php echo get_template_directory_uri(); ?>/images/awsome-frukost.svg" class="most-awesome">
   </div>
   <!--<div class="width50 cell textCenter">
   <img class="grotpase" src="<?php echo get_template_directory_uri(); ?>/images/grotpase.png">
   </div>-->
-  <h4 class="colorWhite textBlock">EXAKT RÄTT INNEHÅLL FÖR<br>
-ATT STARTA DAGEN LIKE A BAWS!<br>
-ATT SMAKEN SEDAN ÄR GUDOMLIG<br>
-MAKES IT A NO-BRAINER.</h4>
-  <br>
-  <a href="?add-to-cart=33"><button class="btn btnGreen">Köp proteingröt</button></a>
-  <br>
-  <br>
-  <br>
+  <h4 class="colorWhite textBlock frontTitle">
+   Exakt rätt innehåll för att starta dagen like a baws, att smaken sedan är gudomlig makes it a no-brainer.</h4>
+  <a href="?add-to-cart=33"><button class="btn btnGreen floatNone buyfront">Köp proteingröt</button></a>
+
  </div>
  
  <div class="scrollDown animated bounce infinite"></div>

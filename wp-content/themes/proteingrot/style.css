@@ -31,21 +31,45 @@ section {width: 100%; height: auto; float: left; background-size: cover !importa
 .cell {display: table-cell; vertical-align: middle;}
 
 .fullSize {
-height: 100vh;
--webkit-transition: all 7s ease; 
--moz-transition: all 7s ease; 
--ms-transition: all 7s ease; 
-transition: all 7s ease; 
+  height: 100vh;
+ }
+ 
+
+.frontPicture {
+  position: absolute;
+  background: url(images/bg/frontpic.png) center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
 
-.fullSize:hover {
-	width: 101%;
+.zoomHover {
+  background-size: 100%;  
+  -webkit-transition: all 5s ease-in-out !important;
+  -moz-transition: all 5s ease-in-out !important;
+  -ms-transition: all 5s ease-in-out !important;
+  -o-transition: all 5s ease-in-out !important;
+  transition: all 5s ease-in-out !important;
 }
+.zoomHover:hover {
+  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1); /* IE 9 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')"; /* IE8 */
+   filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand'); /* IE6 and 7 */ }
 
 .width50 {width: 50%;}
 
 .padding10 {padding: 60px 10%;}
 
+.most-awesome {width: 250px; height: 250px; position: absolute; left: 50px; top: 100px; z-index: 10;}
+.frontTitle {max-width: 500px; margin: 0 auto; text-align: center; text-transform: uppercase; margin-bottom: 1em;   position: relative; z-index: 10;}
+.buyfront {font-size: 1.2em !important; text-transform: uppercase; font-weight: bold; position: relative; z-index: 10;}
+.buyfront:hover {background: #82AA1D !important; color: #fff !important; border-color: #82AA1D !important;} 
 /* Navigation */
 nav {
 	width: 100%;
