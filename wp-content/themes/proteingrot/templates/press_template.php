@@ -6,7 +6,7 @@ Template Name: Press_template
 <?php get_header(); ?>
 <section class="footerLast">
 <div class="wrapper" style="text-align:center;">
-<h4 class="colorWhite">OUR STORY</h4>
+<h2 class="colorWhite">OUR STORY</h2>
 <br><br><br><br>
 <p class="colorWhite">Vår idé är att producera goda, funktionella och nyttiga produkter som passar aktiva livsstilar. 
 Vår första produkt är en portionsförpackad Proteingröt - ”Energi, kraft och problemlösning på påse”.
@@ -21,12 +21,12 @@ Och det ska vara gott! Det är ofta så att ju nyttigare det blir desto mer tumm
 Proteingröt finns i nuläget att beställa på proteingröt.se samt på Nordic Wellness center runt om i landet.</p><br><br>
 
 <h4>PRESSBILDER & LOGOTYPER</h4><br><br><br>
-<a href="<?php echo get_template_directory_uri(); ?>download/image1.zip">Bild 1</a><br>
-<a href="<?php echo get_template_directory_uri(); ?>/download/image2.zip">Bild 2</a><br>
-<a href="<?php echo get_template_directory_uri(); ?>/download/image3.zip">Bild 3</a><br>
-
-<a href="<?php echo get_template_directory_uri(); ?>/download/logo.zip">Logotyp PMS>></a><br>
-<a href="<?php echo get_template_directory_uri(); ?>/download/statement.zip">Statement PMS>></a><br><br><br><br><br>
+<a href="<?php echo get_template_directory_uri(); ?>download/image1.zip"><img src="<?php echo get_template_directory_uri(); ?>/images/protein1.jpg" style="height:150px;width:200px;"></a>
+<a href="<?php echo get_template_directory_uri(); ?>/download/image2.zip"><img src="<?php echo get_template_directory_uri(); ?>/images/protein2.jpg" style="height:150px;width:200px;"></a>
+<a href="<?php echo get_template_directory_uri(); ?>/download/image3.zip"><img src="<?php echo get_template_directory_uri(); ?>/images/protein3.png" style="height:150px;width:200px;"></a>
+<br><br>
+<h4><a href="<?php echo get_template_directory_uri(); ?>/download/logo.zip">Logotyp PMS>></a>&nbsp;&nbsp;
+<a href="<?php echo get_template_directory_uri(); ?>/download/statement.zip">Statement PMS>></a></h4><br><br><br><br><br>
 
 <h4 class="colorWhite">
 PRESSKONTAKT<br><br>
