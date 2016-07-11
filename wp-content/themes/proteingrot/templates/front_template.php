@@ -71,7 +71,6 @@ Jo just det, den innehåller exakt de fetter, proteiner och kolisar<br>
     <b>Rabattkupong</b>
     
     
-    <form action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="name">
       <input type="text" class="input-text mdl-textfield__input" name="coupon_code" id="coupon_code" />
       <label class="mdl-textfield__label" for="coupon_code">Ange din rabattkupong</label>
@@ -80,7 +79,6 @@ Jo just det, den innehåller exakt de fetter, proteiner och kolisar<br>
     <input type="submit" class="btn btnGreen" name="apply_coupon" value="Ge mig rabatt!">
     <?php do_action( 'woocommerce_cart_coupon' ); ?>
     
-    </form>
     
    </div>
   </div>
