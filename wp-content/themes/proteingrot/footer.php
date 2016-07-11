@@ -1,4 +1,4 @@
-<!-- <section class="lifesum" style="position: relative;">
+<section class="lifesum" style="position: relative;">
  <div class="wrapper">
  <img src="<?php echo get_template_directory_uri(); ?>/images/bg/lifesumbg.png" class="lifesumbg">
  <img src="<?php echo get_template_directory_uri(); ?>/images/bg/lifesumbgpepper.png" class="lifesumbgPepper">
@@ -14,10 +14,10 @@
   <span class="small colorBlack textBlock os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">  Proteingröten är inte bara smakligt god, utan även nyttig. Använder du Lifesum för att hålla koll på kosten kommer vår gröt att hjälpa dig på vägen. Gröten är A klassad på Lifesum!
   </span><br>
   
-  <a href="?add-to-cart=33"><button class="btn btnGreen floatLeft os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">Köp gröt</button></a>
+  <a href="/#buy"><button class="btn btnGreen floatLeft os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">Köp gröt</button></a>
  
  </div>
-</section> -->
+</section>
 
 <section class="bgWood">
  <div class="wrapper">

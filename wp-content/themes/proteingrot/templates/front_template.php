@@ -22,7 +22,7 @@ if( !empty($image) ): ?>
   </div>-->
   <h4 class="colorWhite textBlock frontTitle">
    Exakt rätt innehåll för att starta dagen like a baws, att smaken sedan är gudomlig makes it a no-brainer.</h4>
-  <a href="?add-to-cart=33"><button class="btn btnGreen floatNone buyfront">Köp proteingröt</button></a>
+  <a href="#buy"><button class="btn btnGreen floatNone buyfront">Köp proteingröt</button></a>
 
  </div>
  
@@ -45,7 +45,7 @@ Jo just det, den innehåller exakt de fetter, proteiner och kolisar<br>
 
  </div>
 </section>
-<section class="shopSection fullSize row textCenter">
+<section class="shopSection fullSize row textCenter" id="buy">
 <div class="cell">
 	
 <form action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
@@ -182,7 +182,7 @@ Levereras på 1-3 arbetsdagar.</span>
   <span class="small colorBlack textBlock os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">  Proteingröten är inte bara smakligt god, utan även nyttig. Använder du Lifesum för att hålla koll på kosten kommer vår gröt att hjälpa dig på vägen. Gröten är A klassad på Lifesum!
   </span><br>
   
-  <a href="?add-to-cart=33"><button class="btn btnGreen floatLeft os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">Köp gröt</button></a>
+  <a href="#buy"><button class="btn btnGreen floatLeft os-animation" data-os-animation="bounceInRight" data-os-animation-delay="0s">Köp gröt</button></a>
  
  </div>
 </section>
@@ -218,6 +218,23 @@ Levereras på 1-3 arbetsdagar.</span>
     animation: 'rotateX',
     delay: 1000,
     animationDuration: 800
+});
+ </script>
+ 
+ <script>
+ $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });
  </script>
 </body>
