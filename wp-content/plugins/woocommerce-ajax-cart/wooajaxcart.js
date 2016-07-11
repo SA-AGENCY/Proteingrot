@@ -16,7 +16,7 @@ jQuery(document).ready(function($){
         // get the form data before disable button...
         formData = form.serialize();
         
-        $("input[name='update_cart']").val('Updating…').prop('disabled', true);
+        $("input[name='update_cart']").val('Uppdaterar…').prop('disabled', true);
 
         $("a.checkout-button.wc-forward").addClass('disabled').html('Updating…');
 

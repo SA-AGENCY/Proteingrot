@@ -83,6 +83,10 @@ function add_product_to_cart() {
 	}
 }
 
+add_filter( 'woocommerce_add_to_cart_redirect', 'redirect_to_checkout' );
+function wc_custom_cart_redirect() {
+  return get_permalink( wc_get_page_id( '/betalning' ) );
+}
 
 
 ?>
